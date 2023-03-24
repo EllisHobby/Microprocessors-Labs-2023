@@ -188,6 +188,7 @@ void gameDispatch (int request) {
 
     case REQ_SHAKE:
       game.shake = false;
+      break;
     
     default:
       break;

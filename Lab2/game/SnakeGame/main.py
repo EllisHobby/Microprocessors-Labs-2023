@@ -111,6 +111,7 @@ controller.find_device()
 # if device found check connection
 if controller.dev:
     controller.check_connection()
+        
 else:
     print("Cannot Find Controller")
     exit()
