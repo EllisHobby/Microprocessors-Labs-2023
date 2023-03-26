@@ -1,3 +1,9 @@
+/*
+
+Author: Ellis Hobby
+
+*/
+
 #include "mpu6050.h"
 
 
@@ -389,7 +395,7 @@ Axis IMU::read (void) {
   i2cStop_();               // STOP 
   
   // convert accel raw to +/-g
-  accel_buf_.x = ((float)raw_.accel_x / accel_factor_);
+  accel_buf_.x = ((float)raw_.accel_x / accel_factor_) + accel_offs_.x;
   accel_buf_.y = ((float)raw_.accel_y / accel_factor_) + accel_offs_.y;
   accel_buf_.z = ((float)raw_.accel_z / accel_factor_) + accel_offs_.z;
   

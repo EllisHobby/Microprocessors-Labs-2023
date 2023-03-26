@@ -1,3 +1,9 @@
+/*
+
+Author: Ellis Hobby
+
+*/
+
 #include "Arduino.h"
 #include "analog_joystick.h"
 
@@ -16,8 +22,8 @@ JoyStick::JoyStick (uint8_t x_chan = ADC0, uint8_t y_chan = ADC1) {
   control_buf_.x = 0;
   control_buf_.y = 0;
   
-  // Vref = 2.56V, left adjust (8-bit resolution)
-  ADMUX = (1 << REFS1) | (1 << REFS0) | (1 << ADLAR);                            
+  // Vref = AVCC, left adjust (8-bit resolution)
+  ADMUX =   (1 << REFS0) | (1 << ADLAR);                            
 
   // enable ADC, clear any flags 
   ADCSRA = (1 << ADEN) | (1 << ADIF); 

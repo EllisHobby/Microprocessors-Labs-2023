@@ -1,3 +1,9 @@
+/*
+
+Author: Ellis Hobby
+
+*/
+
 #ifndef AXIS_H
 #define AXIS_H
 

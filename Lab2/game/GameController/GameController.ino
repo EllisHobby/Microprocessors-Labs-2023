@@ -1,3 +1,9 @@
+/*
+
+Author: Ellis Hobby
+
+*/
+
 #include "analog_joystick.h"
 #include "mpu6050.h"
 #include "game_control.h"
