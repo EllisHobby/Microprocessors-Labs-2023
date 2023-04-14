@@ -67,7 +67,7 @@ ISR (CONTROL_INT_VECT) {
 
 
 void setup(void) {
-  
+
   // no interrupts
   cli();
   

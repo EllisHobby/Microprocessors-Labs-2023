@@ -27,7 +27,7 @@ void SoundSensor::_initADC(void) {
   ADCSRB = (1 << MUX5);
 
   // internal 1.1V ref
-  ADMUX |= (1 << REFS1);
+  ADMUX |= (1 << REFS1) | (1 << REFS0);
                             
   // enable ADC, clear any flags 
   ADCSRA = (1 << ADEN) | (1 << ADIF); 
@@ -120,7 +120,7 @@ uint8_t SoundSensor::senseFreq(void) {
     _this_freq = NOTE_A4;
     _ticks = 0;
   }
-  else if (_ticks > 10) {
+  else if (_ticks > SAMPLE_CNT) {
     _this_freq = 0;
     _ticks = 0;
   }
