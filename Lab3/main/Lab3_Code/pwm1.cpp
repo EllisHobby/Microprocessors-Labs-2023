@@ -86,7 +86,6 @@ void PWM1::speedUp(void) {
   // mod 4 stays within array bouds
   _speed_idx = (_speed_idx + 1) % 4;
   _setSpeed();
-  Serial.println(_speed_idx);
 }
 
 
@@ -100,7 +99,6 @@ void PWM1::speedDown(void) {
     _speed_idx = (_speed_idx - 1) % 4;    
   }
   _setSpeed();
-  Serial.println(_speed_idx);
 }
 
 
