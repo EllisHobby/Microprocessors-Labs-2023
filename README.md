@@ -8,4 +8,4 @@ Repos contain program code, schematics, report, and any other relevant files.
 <br />
 - [x] [Lab 1](https://github.com/EllisHobby/Microprocessors-Labs-2023/tree/main/Lab1)
 - [x] [Lab 2](https://github.com/EllisHobby/Microprocessors-Labs-2023/tree/main/Lab2)
-- [ ] Lab3
+- [x] [Lab3](https://github.com/EllisHobby/Microprocessors-Labs-2023/tree/main/Lab3)
